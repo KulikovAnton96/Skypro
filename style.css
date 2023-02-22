@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.body {
+  font-family: "Monsterrat", sans-serif;
+}
+
+.center {
+  padding-left: calc(50% - 556px);
+  padding-right: calc(50% - 556px);
+}
+
+.top {
+  width: 1440px;
+  height: 1024px;
+  background-image: url(img/top.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.top__text {
+  width: 481px;
+  height: 64px;
+  padding-top: 32px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  color: #FFFFFF;
+}
+.top__text_go {
+  font-weight: 1000;
+}
+.top__button {
+  margin-top: 44px;
+  background: #9C0332;
+  border-radius: 30px;
+  border: 1px solid #9C0332;
+  box-sizing: border-box;
+  width: 234px;
+  height: 48px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+.top__button:hover {
+  background: #FFFFFF;
+  color: #9C0332;
+}
+
+.title {
+  width: 788.78px;
+  height: 125.01px;
+  padding-top: 217px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  display: flex;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+.box__game {
+  background-image: url(img/box-game.jpg);
+  width: 1440px;
+  height: 556px;
+  display: flex;
+  row-gap: 32px;
+}
+.box__game__link {
+  display: grid;
+  grid-column: span 4;
+  grid-template-columns: repeat(12, 1fr);
+  border: none;
+  background: rgba(39, 1, 15, 0) transparent;
+  border-radius: 16px;
+}
+
+.item {
+  width: 379px;
+  height: 300px;
+  margin-top: 128px;
+  grid-column: span 4;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 34px;
+  line-height: 41px;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  background: #000915;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.item:hover {
+  transition: all 0.4s;
+  transform: scale(1.05);
+  box-shadow: 0 0 5px;
+}
+
+.game_1 {
+  background-image: url(img/game1.png);
+}
+
+.game_2 {
+  background-image: url(img/game2.png);
+}
+
+.game_3 {
+  background-image: url(img/game3.png);
+}/*# sourceMappingURL=style.css.map */
