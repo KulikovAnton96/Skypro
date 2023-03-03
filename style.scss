@@ -7,8 +7,17 @@ a {
     text-decoration: none;
 }
 
-.body {
+body {
     font-family: 'Monsterrat', sans-serif;
+    background-color: #000;
+    background: cover;
+    background-position: 100vh;
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
 }
 
 .center {
@@ -18,7 +27,6 @@ a {
 }
 
 .top {
-    width: 1440px;
     height: 1024px;
     background-image: url(img/top.jpg);
     background-repeat: no-repeat;
@@ -80,58 +88,60 @@ a {
     color: #FFFFFF;
 }
 
-.box__game {
+.games {
     background-image: url(img/box-game.jpg);
-    width: 1440px;
-    height: 556px;
-    display: flex;
-    row-gap: 32px;
-
-    &__link {
-        display: grid;
-        grid-column: span 4;
-        grid-template-columns: repeat(12, 1fr);
-        border: none;
-        background: rgba(39, 1, 15, 0) transparent;
-        border-radius: 16px;
-    }
-}
-
-.item {
-    width: 379px;
-    height: 300px;
-    margin-top: 128px;
-    grid-column: span 4;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 34px;
-    line-height: 41px;
-    color: #FFFFFF;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end;
-    padding-left: 32px;
-    padding-bottom: 32px;
-    background: #000915;
-    background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
+    display: flex;
+    gap: 32px;
+    padding-top: 128px;
+    padding-bottom: 128px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    background: rgba(39, 1, 15, 0) transparent;
+    border-radius: 16px;
+    box-sizing: border-box;
 
-    &:hover {
-        transition: all 0.4s;
-        transform: scale(1.05);
-        box-shadow: 0 0 5px;
+    &__item {
+        width: 379px;
+        height: 300px;
+        grid-column: span 4;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        padding-left: 32px;
+        padding-bottom: 32px;
+        background: #000915;
+        background-repeat: no-repeat;
+        background-size: cover;
+        box-sizing: border-box;
+
+        &:hover {
+            transition: all 0.4s;
+            transform: scale(1.05);
+            box-shadow: 0 0 5px;
+        }
+    }
+
+  
+
+    &__item-1 {
+        background-image: url(img/game1.png);
+    }
+
+    &__item-2 {
+        background-image: url(img/game2.png);
+    }
+
+    &__item-3 {
+        background-image: url(img/game3.png);
     }
 }
 
-.game_1 {
-    background-image: url(img/game1.png);
-
-}
-
-.game_2 {
-    background-image: url(img/game2.png);
-}
-
-.game_3 {
-    background-image: url(img/game3.png);
-}
+@import 'mobile';
