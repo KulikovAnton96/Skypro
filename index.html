@@ -31,20 +31,43 @@
         <div class="rectangle__content">
             <h1 class="rectangle__title">Времена года</h1>
             <p class="top__text">Вам предстоит пройти несколько увлекательных игр. Если готов нажимай <span class="top__text_go">поехали</span> и <span class="top__text_go">приступай</span></p>
-            <a class="top__button" href="game1.html">Поехали!</a>
+            <input class="top__button" type="button" onclick="game1()" value="Поехали!">
         </div>
 
         <div class="rectangle__mobile center">
             <h1 class="rectangle__title">Времена года</h1>
             <p class="top__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <a class="top__button" href="game1.html">Играть!</a>
+            <input class="top__button" type="button" onclick="game1()" value="Поехали!">
         </div>
         
         <div class="rectangle__game center">
-            <img class="rectangle__image" src="img/restangleGame.png" alt="game">
+            <img class="rectangle__image" src="img/reсtangleGame.png" alt="game">
         </div>
     </section>
 
+    <script>
+        function game1 () {
+        let monthNumber = prompt('Введите номер месяца');
+
+        while (monthNumber <= 12) {
+            if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+                alert('Зима');
+            } else if (monthNumber >= 3 && monthNumber <= 5) {
+                alert('Весна');
+            } else if (monthNumber >= 6 && monthNumber <= 8) {
+                alert('Лето');
+            } else if (monthNumber >= 9 && monthNumber <= 11) {
+                alert('Осень');
+            } else {
+                alert('Попробуйте ещё раз');
+                }
+	            monthNumber++;
+                break;
+            }    
+        }
+        
+
+    </script>
     
 </body>
 
