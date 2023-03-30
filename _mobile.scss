@@ -40,5 +40,52 @@
         flex-direction: column;
     }
 
+    .rectangle__content {
+        display: none;
+    }
+    
+    .rectangle__mobile {
+        display: block;
+    }
+
+    .rectangle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        &__title {
+            width: 243px;
+            height: 39px;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 39px;
+        }
+
+        &__game {
+            width: 344px;
+            height: 236px;
+            padding-top: 64px;
+             
+        }
+
+        &__content {
+            
+            padding-top: 51px;
+            padding-bottom: 64px;
+        }
+
+        &__image {
+            width: 343px;
+            height: 217.6px;
+        }
+    }
+
+    .top__text {
+        width: 343px;
+        height: 66px;
+        font-size: 14px;
+        line-height: 22px;
+    }
 
 }
