@@ -57,8 +57,8 @@ printMessage();
 
 //Задание 5
 
-let num1 = prompt('Введите первое число');
-let num2 = prompt('Введите второе число');
+const num1 = prompt('Введите первое число');
+const num2 = prompt('Введите второе число');
 
 function correctNum (a,b) {
     testNum(a) && testNum(b) ? alert(a*b):
@@ -74,8 +74,8 @@ correctNum(num1 , num2);
 
 //Задание 6
 
-let n = prompt('Введите число');
-let cubed = n ** 3;
+const n = prompt('Введите число');
+const cubed = n ** 3;
 
 function cubedN (n, cubed) {
     if (!isNaN(n)) {
