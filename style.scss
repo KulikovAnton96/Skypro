@@ -28,7 +28,7 @@ body {
 
 .top {
     height: 1024px;
-    background-image: url(img/top.jpg);
+    background-image: url(top.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -89,7 +89,7 @@ body {
 }
 
 .games {
-    background-image: url(img/box-game.jpg);
+    background-image: url(box-game.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -132,20 +132,20 @@ body {
   
 
     &__item-1 {
-        background-image: url(img/game1.png);
+        background-image: url(game1.png);
     }
 
     &__item-2 {
-        background-image: url(img/game2.png);
+        background-image: url(game2.png);
     }
 
     &__item-3 {
-        background-image: url(img/game3.png);
+        background-image: url(game3.png);
     }
 }
 
 .rectangle {
-    background-image: url(img/box-game.jpg);
+    background-image: url(box-game.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
