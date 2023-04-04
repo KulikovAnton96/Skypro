@@ -18,11 +18,19 @@ num = num.join(' ');
 console.log(num);
 
 //Задание 4
-let arr = [
-    [1, 1, 1],
-    [1, 1, 1],
-    [1, 1, 1],
-];
+const rows = 3;
+const cols = 3
+const nestedArr = [];
+
+for (let i = 0; i < rows; i++) {
+    const emptyArr = [];
+    for (let j = 0; j < cols; j++) {
+        emptyArr.push(1);
+    }
+    nestedArr.push(emptyArr);
+}
+
+console.log(nestedArr);
 
 //Задание 5
 let n = [1, 1, 1];
