@@ -1,65 +1,40 @@
+function game1 () {
+    let monthNumber = prompt('Введите номер месяца');
 
-// Задание 1
-let A = 20;
-alert(`Задание 1. ${A}`);
-
-//Задание 2
-let agePhone = 2017;
-alert(`Задание 2. Год выпуска первого iPhone -  ${agePhone}`);
-
-//Задание 3
-let nameJS = 'Брендан Эйх';
-alert(`Задание 3. Создатель JavaScript - ${nameJS}`);
-
-//Задание 4
-let x = 10;
-let y = 2;
-alert(`Задание 4. 10-2= ${x - y}`);
-alert(`10+2= ${x + y}`);
-alert(`10*2= ${x * y}`);
-alert(`10*2= ${x / y}`);
-
-//Задание 5
-let z = 2;
-alert(`Задание 5. 2 в 5 степени = ${z ** 5}`);
-
-//Задание 6
-let a = 9;
-let b = 2;
-alert(`Задание 7. Остаток от деления 9/2= ${a % b}`);
-
-//Задание 7
-let num = 1;
-num += 5;
-num -= 3;
-num *= 7;
-num /= 3;
-num++;
-num--;
-alert(`Задание 7. Число ${num}`);
-
-//Задание 8
-let age = Number(prompt('Сколько вам лет?'));
-alert(age);
-
-//Задание 9
-const user = {
-    name: 'Иван',
-    isAdmin: true
+    while (monthNumber <= 12) {
+        if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
+            alert('Зима');
+        } else if (monthNumber >= 3 && monthNumber <= 5) {
+            alert('Весна');
+        } else if (monthNumber >= 6 && monthNumber <= 8) {
+            alert('Лето');
+        } else if (monthNumber >= 9 && monthNumber <= 11) {
+            alert('Осень');
+        } else {
+            alert('Попробуйте ещё раз');
+            }
+            monthNumber++;
+            break;
+    }    
 }
 
-user.cityOfResidence = true;
+function game2 () {
+    let fruits = ['Яблоко', 'Груша', 'Дыня', 'Виноград', 'Персик', 'Апельсин', 'Мандарин'];
 
-user.age = '30';
+    let shuffledFruits = fruits.sort(() => Math.random() - 0.5);
 
-delete user.cityOfResidence;
+    for (let i = 0; i < shuffledFruits.length; i++) {
+        alert(shuffledFruits[i]);
+    }
 
-let info = prompt('Какую информацию хотите узнать о пользователе?')
+    let firstFruit = prompt('Чему равнялся первый элемент массива?');
+    let lastFruit = prompt('Чему равнялся последний элемент массива?');
 
-console.log / user['age'];
-
-alert(user.age);
-
-//Задание 10
-let namE = prompt('Как вас зовут?');
-alert(`Привет, ${namE} !`);
+    if (firstFruit === fruits[0] && lastFruit === fruits[fruits.length - 1]) {
+        alert('Поздравляем, вы угадали оба элемента массива!');
+    } else if (firstFruit === fruits[0] || lastFruit === fruits[fruits.length - 1]) {
+        alert('Вы были близки к победе!');
+    } else {
+        alert('К сожалению, вы неверно ответили на оба вопроса.');
+    }
+}
