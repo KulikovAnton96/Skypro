@@ -37,7 +37,7 @@
         <div class="rectangle__mobile center">
             <h1 class="rectangle__title">Времена года</h1>
             <p class="top__text">Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы узнаете к какому времени года он относится</p>
-            <input class="top__button" type="button" onclick="game1()" value="Поехали!">
+            <input class="top__button" type="button" onclick="game1()" value="Играть">
         </div>
         
         <div class="rectangle__game center">
@@ -45,28 +45,26 @@
         </div>
     </section>
 
-    <script>
-        function game1 () {
-        let monthNumber = prompt('Введите номер месяца');
+    <section class="rectangle center">
+        <div class="rectangle__game center">
+            <img class="rectangle__image" src="img/gaming_re_cma2.png" alt="game">
+        </div>
 
-        while (monthNumber <= 12) {
-            if (monthNumber >= 1 && monthNumber <=2 || monthNumber === 12) {
-                alert('Зима');
-            } else if (monthNumber >= 3 && monthNumber <= 5) {
-                alert('Весна');
-            } else if (monthNumber >= 6 && monthNumber <= 8) {
-                alert('Лето');
-            } else if (monthNumber >= 9 && monthNumber <= 11) {
-                alert('Осень');
-            } else {
-                alert('Попробуйте ещё раз');
-                }
-	            monthNumber++;
-                break;
-            }    
-        }
-    </script>
-    
+        <div class="rectangle__content center">
+            <h1 class="rectangle__title">Запомни слова </h1>
+            <p class="top__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <input class="top__button" type="button" onclick="game2()" value="Играть!">
+        </div>
+
+        <div class="rectangle__mobile center">
+            <h1 class="rectangle__title">Запомни слова </h1>
+            <p class="top__text">При нажатии на кнопку играть, вы увидите несколько слов, которые вам необходимо запомнить.</p>
+            <input class="top__button" type="button" onclick="game2()" value="Играть!">
+        </div>
+        
+    </section>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

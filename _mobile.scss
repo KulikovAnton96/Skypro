@@ -1,17 +1,17 @@
 @media (max-width: 767px) {
 
     .center {
-        padding-left: 16px;
-        padding-right: 16px;
+        padding-left: 0px;
+        padding-right: 0px;
     }
 
     .top {
-        width: 375px;
         height: 735px;
         align-content: center;
         flex-wrap: wrap;
 
         &__text {
+            padding-left: 16px;
             width: 343px;
             height: 66px;
             font-size: 14px;
@@ -26,7 +26,7 @@
 
     .title {
         width: 343px;
-        height: 77.44px;
+        height: 77px;
         font-size: 32px;
         line-height: 39px;
         display: flex;
@@ -38,6 +38,12 @@
     .games {
         display: flex;
         flex-direction: column;
+        row-gap: 32px;
+
+        &__item {
+            width: 343px;
+            height: 300px;
+        }
     }
 
     .rectangle__content {
@@ -49,9 +55,10 @@
     }
 
     .rectangle {
-        background-image: url(box-game.jpg);
+        background-image: url(img/box-game.jpg);
         background-position: center;
         background-size: cover;
+        background-repeat: no-repeat;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -72,8 +79,7 @@
              
         }
 
-        &__content {
-            
+        &__content {            
             padding-top: 51px;
             padding-bottom: 64px;
         }
