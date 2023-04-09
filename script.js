@@ -31,10 +31,10 @@ function game2 () {
     let lastFruit = prompt('Чему равнялся последний элемент массива?');
 
     if (firstFruit === fruits[0] && lastFruit === fruits[fruits.length - 1]) {
-        alert('Поздравляем, вы угадали оба элемента массива!');
+        alert('Поздравляем, вы угадали оба фрукта!');
     } else if (firstFruit === fruits[0] || lastFruit === fruits[fruits.length - 1]) {
         alert('Вы были близки к победе!');
     } else {
-        alert('К сожалению, вы неверно ответили на оба вопроса.');
+        alert('К сожалению, вы не угадали ни одного фрукта.');
     }
 }
