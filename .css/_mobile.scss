@@ -7,7 +7,6 @@
 
     .top {
         height: 735px;
-        align-content: center;
         flex-wrap: wrap;
 
         &__text {
@@ -16,12 +15,12 @@
             width: 343px;
             height: 66px;
             font-size: 14px;
-            line-height: 22px;            
+            line-height: 22px;
+            text-align: center;            
         }
 
-        &__button {
-            margin-top: 32px;
-            margin-left: 54px;
+        &__button__top {
+           margin-left: 70px;
         }
     }
 
@@ -31,9 +30,9 @@
         font-size: 32px;
         line-height: 39px;
         display: flex;
-        align-items: center;
         text-align: center;
         padding-top: 238px;
+        margin-left: 16px;
     }
 
     .games {
@@ -54,7 +53,7 @@
     }
     
     .rectangle__mobile {
-        display: block;
+        display: contents;
     }
 
     .rectangle {
@@ -73,8 +72,9 @@
             font-weight: 700;
             font-size: 32px;
             line-height: 39px;
-            padding-left: 66px;
+            padding-left: 0px;
             padding-top: 51px;
+            text-align: center;
         }
 
         &__game {
@@ -85,10 +85,7 @@
              
         }
 
-        &__content {            
-            padding-top: 51px;
-            padding-bottom: 64px;
-        }
+        
 
         &__image {
             width: 343px;

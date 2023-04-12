@@ -44,16 +44,11 @@ body {
         color: #FFFFFF;
     }
 
-    &__text_go {
-        font-weight: 1000;
-    }
-
-    &__button {
+    &__button__top {
         margin-top: 44px;
         background: #9C0332;
         border-radius: 30px;
         border: 1px solid #9C0332;
-        box-sizing: border-box;
         width: 234px;
         height: 48px;
         font-style: normal;
@@ -65,7 +60,24 @@ body {
         align-items: center;
         color: #FFFFFF;
         transition: all 0.3s;
+    }
 
+    &__button {
+        margin-top: 44px;
+        background: #9C0332;
+        border-radius: 30px;
+        border: 1px solid #9C0332;
+        width: 234px;
+        height: 48px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #FFFFFF;
+        transition: all 0.3s;
     }
 
     &__button:hover {
@@ -81,9 +93,7 @@ body {
     font-style: normal;
     font-weight: 700;
     font-size: 64px;
-    line-height: 78px;
-    display: flex;
-    align-items: center;
+    line-height: 78px;   
     color: #FFFFFF;
 }
 
