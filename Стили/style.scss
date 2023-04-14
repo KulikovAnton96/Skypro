@@ -44,24 +44,6 @@ body {
         color: #FFFFFF;
     }
 
-    &__button__top {
-        margin-top: 44px;
-        background: #9C0332;
-        border-radius: 30px;
-        border: 1px solid #9C0332;
-        width: 234px;
-        height: 48px;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 22px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: #FFFFFF;
-        transition: all 0.3s;
-    }
-
     &__button {
         margin-top: 44px;
         background: #9C0332;
@@ -85,6 +67,30 @@ body {
         color: #9C0332;
     }
 }
+
+.top__button__top {
+    margin-top: 44px;
+    background: #9C0332;
+    border-radius: 30px;
+    border: 1px solid #9C0332;
+    width: 234px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+    transition: all 0.3s;
+}
+
+.top__button__top:hover {
+    background: #FFFFFF;
+    color: #9C0332;
+}
+
 
 .title {
     width: 788px;
