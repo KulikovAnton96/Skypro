@@ -66,8 +66,8 @@ console.log(resulT);
 console.log(new Date().toLocaleString());
 
 //Задание 9
-let currentDate = new Date(); // создаем переменную с текущей датой
-currentDate.setDate(currentDate.getDate() + 73); // добавляем 73 дня к текущей дате
+let currentDate = new Date();
+currentDate.setDate(currentDate.getDate() + 73);
 console.log(currentDate);
 const now = new Date();
 
